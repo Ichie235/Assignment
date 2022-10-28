@@ -108,6 +108,7 @@ body{
      width: 375px;
       font-size:10px
     }
+/* FLEXLAYOUT */
     #flex-container{
         width: 100%;
     }
@@ -140,4 +141,22 @@ body{
     width: 36px;
     height:20px;
   }
+
+  /*GRIDLAYOUT  */
+  
+#grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    justify-content: center;
+    align-items: baseline; 
+}
+.grid-child{
+    margin-top: 20%;
+    margin-bottom: 6%;
+    align-self: baseline;
+    padding: 10px;
+    height: 370px;
+    
+}
   }
