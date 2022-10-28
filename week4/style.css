@@ -1,0 +1,143 @@
+body{
+    width: 1440px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+/* ------------------- */
+ /* FLEX BOX STYLING */
+/* ------------------- */
+
+#flex-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.flex-child{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 37px;
+    flex-basis: auto;
+
+}
+.flex-child:nth-child(1){
+   background-color: hsl(33, 99% , 62%);
+   border-top-left-radius: 6px;
+   border-bottom-left-radius: 6px;
+}
+.flex-child:nth-child(2){
+    background-color: hsl(180, 100% , 27%);
+}
+.flex-child:nth-child(3){
+    background-color:  hsl(180,100%,11.2%);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.sedans-btn, .suvs-btn, .luxury-btn{
+    color: white;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.sedans-btn{
+    background-color: hsl(33, 99% , 62%);
+}
+.suvs-btn{
+    background-color:  hsl(180, 100% , 27%);
+}
+.luxury-btn{
+  background-color:  hsl(180,100%,11.2%);   
+}
+
+
+
+/* ------------------- */
+ /* GRID BOX STYLING */
+/* ------------------- */
+
+#grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    align-items: baseline; 
+   
+
+}
+.grid-child{
+    margin-top: 29%;
+    margin-bottom: 10%;
+    align-self: baseline;
+    padding: 15px;
+    height: 385px;
+    
+}
+.grid-child:nth-child(1){
+    grid-column: 1/2;
+    background-color: hsl(33, 99% , 62%);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.grid-child:nth-child(2){
+  grid-column: 2/3;
+  background-color:  hsl(180, 100% , 27%);
+}
+.grid-child:nth-child(3){
+    grid-column: 3/4;
+    background-color:  hsl(180,100%,11.2%);  
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px; 
+
+}
+
+ /* ------------------- */
+ /* MEDIA QUERY */
+/* ------------------- */
+
+
+@media screen and (max-width: 375px) {
+    body{
+     width: 375px;
+      font-size:10px
+    }
+    #flex-container{
+        width: 100%;
+    }
+    .flex-child{
+        margin-top: 4%;
+        margin-bottom: 4%;
+        padding: 15px;
+        flex-basis: auto;
+    
+    }
+  .flex-child:nth-child(2){
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+  .sedans-heading, .suvs-heading, .luxury-heading{
+    font-size: 13px;
+  }
+  .sedans-btn, .suvs-btn, .luxury-btn{
+        color: white;
+        margin-top: 20px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border: 1px solid white;
+        border-radius: 20px;
+       font-size:10px;
+    }
+  #image-icon{
+    width: 36px;
+    height:20px;
+  }
+  }

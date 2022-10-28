@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Register</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  
+</head>
+
+<body>
+    <main class="signup-container">
+      
+<!-- This section tag cointains code that links to the signin page       -->
+       <section class="sub-container1">
+            <div class="sub-child">
+            <h2 class="signin-heading">Welcome Back!</h2>
+            <p class="signin-text">To keep connected with us please <br> login with your personal info</p>
+            <button class="signin-btn"><a href="login.html" style="color: #FFFF;text-decoration:none;" > SIGN IN</a></button>
+            </div>
+        </section>
+      
+       
+<!--       This section contains all form input for the register page -->
+      
+      <section class="sub-container2">
+            <div class="register">
+            <h2 style="color: #84FF84; font-size:33px;text-align:center;">Create 
+           Account
+            </h2>
+           <form action="" method="post" class="form-container">
+            <div class="form-child">
+            <label for="first-name">First name</label><br>
+            <input type="text" name="fname" id="fname" placeholder="Enter first name" class="input-field" required />
+            <i class="fa-solid fa-user user1"></i>
+        </div>
+        <div class="form-child">
+            <label for="last-name">Last name</label><br>
+            <input type="text" name="lname" id="lname" placeholder="Enter last name" class="input-field" required />
+            <i class="fa-sharp fa-solid fa-user"></i>
+        </div>
+        <div class="form-child">
+            <label for="phone">Phone number</label><br>
+            <input type="tel" name="phone" id="phone" placeholder="Enter phone number" class="input-field" required />
+
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter email" 
+              class="input-field" required />
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="form-child">
+            <label for="gender">Gender</label><br/>
+            <select name="gender" id="" class="select-field">
+                <option value="gender">gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+        </div>
+              <div class="form-child">
+            <label for="birthday">Date of birth</label>
+            <input type="datetime-local" name="birthday" id="" />
+              </div>
+              <button class="signup-btn"><a href="" style="color: #FFFF;text-decoration:none;" > SIGN UP</a></button>
+           </form>
+          
+        </div>
+    </section>
+    </main>
+
+
+</body>
+
+</html>
