@@ -57,6 +57,13 @@ body{
   background-color:  hsl(180,100%,11.2%);   
 }
 
+#image-icon{ 
+    width: 64px;
+    height: 40px;
+}
+
+
+    
 
 
 /* ------------------- */
